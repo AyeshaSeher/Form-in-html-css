@@ -1,0 +1,810 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie-edge">
+<title> Assignment# 4</title>
+<style>
+*{
+	margin:0 auto;
+	padding:10px;
+	background-color:white;
+	box-sizing: border-box; 
+}
+
+body
+{
+	
+	font-family:sans-serif;
+	background-color: #ffc842;
+	color:#000;
+	line-height: 2;
+	padding: 1em;
+	
+}
+
+
+.container
+{
+	max-width: 1000px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 1em;
+}
+.wrapper
+{
+box-shadow: 0 0 20px 0 rgba(72,94,116,0.7);
+}
+
+.wrapper > * {
+	padding: 1em;
+}
+
+.company-info
+{
+	background: #ffc842;
+	
+}
+
+.company-info h3
+{
+	text-align: center;
+}
+
+.contact 
+{
+	background: #ffc842;
+	
+}
+
+.contact form 
+{
+	display: grid;
+	
+}
+
+.contact form label
+{
+	display: block;
+}
+
+.contact form p
+{
+	margin:0;
+}
+
+
+.contact form button, .contact form input, 
+. contact form textarea 
+{
+		width: 100%;
+		padding: 1em;
+		border: 1px;
+		border: 1px solid #ffc842;
+}
+
+.contact form button{
+	background: #ffc842;
+	border: 0;
+	text-transform: uppercase;
+}
+
+.contact form button: hover, .contact form button: focus
+{
+	background: #ef9a9a;
+	color: #000;
+	outline:0;
+	transition: background-color 2s ease-out;
+}
+
+td
+{
+	
+	text-align:center;
+	font-family: 'Avenir Next', 'Segoe UI', 'Lucida Grande', sans-serif;
+	border-bottom: 12px solid #ffc842;
+	
+}
+
+
+
+th
+{
+	border-bottom: 20px solid black;
+	margin:20px;
+	text-align: center;
+	font-weight:300px;
+	font-size:20px;
+}
+
+@media 
+only screen and (max-width: 760px),
+(min-device-width: 768px) and (max-device-width: 1024px)  {
+	table, thead, tbody, th, td, tr 
+{ 
+		display: block; 
+}
+
+
+</style>
+</head>
+<body>
+<div class="container">
+<div class="wrapper">
+	<div class="company-info">
+	<h3> Form </h3>
+	</div>
+	<div class="contact">
+	<h3><center><u> Email Us</u> </center></h3>
+	
+<form action="">
+<fieldset>
+<legend> Personal Detail </legend>
+	<label> FirstName:  </label>
+		<input type="text" name="Fname" placeholder="FirstName" /> 
+		<br><br>
+	<label> LastName: </label>
+		<input type="text" name="Lname" placeholder="LastName" /> 
+		<br/><br>
+	<label> E-mail: </label>
+		<input type="email" name="email" placeholder="Email"/>
+		<br><br>
+	<label> Password: </label>
+		<input type="password" name="password" placeholder="Password" /> 
+		<br><br/>
+	<label> Date of Birth: </label>
+		<input type="text" placeholder="DateOfBirth"><br><br>
+	<label> FatherName: </label>
+		<input type="text" name="Fname" placeholder="FatherName" /> 
+		<br><br>
+	<label> Gender: </label>
+		<input type="radio" name="gender" value="Male"> Male
+		<input type="radio" name="gender" value="Female"> Female 
+		<br><br>
+	<label> PostName: </label>
+		<input type="radio" name="post" value="Lecturer">Lecturer
+		<input type="radio" name="post" value="Programmer">Programmer
+		<input type="radio" name="post" value="WebMaster">WebMaster 
+		 <br><br>
+	<label> Address: </label> 
+		<input type="text" name="Address" placeholder="Address" />
+		<br><br>
+	<label> PhoneNo: </label> 
+		<input type="number" name="phno" placeholder="PhoneNo" /> 
+		<br><br>
+	<label> Domicile: </label>
+	<select> 
+		<option display hidden> select your Province</option>
+		<option>Punjab</option>
+		<option> KPK</option>
+		<option> Balochistan</option>
+		<option> sarhad</option>
+	</select>
+	<br><br>
+	<label> City: </label>
+	<select> 
+		<option display hidden> select your city</option>
+		<option>Gujrat</option>
+		<option> Kharian</option>
+		<option> Jhelum</option>
+		<option> Murree</option>
+	</select>
+	<br><br>
+	<label> Country: </label> 
+	<select>  
+		<option display hidden> select your country</option>
+		<option>Pakistan</option>
+		<option> China</option>
+		<option> Korea</option>
+		<option> Germany</option>
+	</select>
+	<br><br>
+	<label> Required Education: </label> 
+		<br>
+		<input type="checkbox" name="bsc" value="BSC">BSC<br>
+		<input type="checkbox" name="MSC" value="MSC">MSC<br>
+		<input type="checkbox" name="MPHIL" value="MPHIL" checked>MPHIL<br><br>
+	<label> Experience: </label> 
+		<br>
+		<input type="number" name="exp" placeholder="Experience"> <br><br>
+	<label> Voice Msg: </label> 
+		<br>
+			<audio controls>
+			<source src="voice.ogg" type="audio/ogg">
+			<source src="voice.mp3" type="audio/mpeg">
+		</audio> <br>
+		<label> Message: <textarea placeholder="Message" class="message"></textarea></label><br>
+		<button class="btn"> View Form</button>
+		<button class="btn"> Download Form</button>
+		<button class="btn">Submit</button> <br>
+</fieldset>
+</form>
+</div>
+</div>
+</div>
+<br>
+<!-- Table Content -->
+
+<table>
+<thead>
+	<tr class="tr">
+		<th class="th">Name</th>
+		<th class="th">Semester</th>
+		<th class="th">Campus</th>
+		<th class="th">Subject</th>
+		<th class="th">Roll No</th>
+		<th class="th">Department</th>
+		<th class="th">Block</th>
+		<th class="th">Bus No</th>
+		<th class="th">City</th>
+		<th class="th">Country</th>
+	</tr>
+</thead>
+<tbody>
+	<tr class="tr">
+		<td class="td">Alia</td>
+		<td class="td">1</td>
+		<td class="td">UOG</td>
+		<td class="td">CS</td>
+		<td class="td">51</td>
+		<td class="td">CS</td>
+		<td class="td">A</td>
+		<td class="td">8</td>
+		<td class="td">Gujrat</td>
+		<td class="td">Pakistan</td>
+	</tr>
+	<tr class="tr">
+		<td class="td">Ali</td>
+		<td class="td">2</td>
+		<td class="td">UOL</td>
+		<td class="td">SE</td>
+		<td class="td">90</td>
+		<td class="td">64</td>
+		<td class="td">A5</td>
+		<td class="td">90</td>
+		<td class="td">Mumbai</td>
+		<td class="td">India</td>
+	</tr>
+	<tr class="tr">
+		<td class="td">Amjad</td>
+		<td class="td">7</td>
+		<td class="td">UOP</td>
+		<td class="td">Chemistry</td>
+		<td class="td">50</td>
+		<td class="td">Chemistry</td>
+		<td class="td">7c</td>
+		<td class="td">18</td>
+		<td class="td">sdf</td>
+		<td class="td">Iran</td>
+	</tr>
+	<tr class="tr">
+		<td class="td">Abdullah</td>
+		<td class="td">3</td>
+		<td class="td">UOT</td>
+		<td class="td">IT</td>
+		<td class="td">5</td>
+		<td class="td">IT</td>
+		<td class="td">7g</td>
+		<td class="td">82</td>
+		<td class="td">Jhelum</td>
+		<td class="td">Pakistan</td>
+	</tr>
+	<tr class="tr">
+		<td class="td">Nazia</td>
+		<td class="td">4</td>
+		<td class="td">UOH</td>
+		<td class="td">Math</td>
+		<td class="td">11</td>
+		<td class="td">Math</td>
+		<td class="td">S7</td>
+		<td class="td">11</td>
+		<td class="td">Murre</td>
+		<td class="td">Pakistan</td>
+	</tr>	
+	<tr class="tr">
+		<td class="td">Ayesha</td>
+		<td class="td">8</td>
+		<td class="td">UOR</td>
+		<td class="td">Phy</td>
+		<td class="td">22</td>
+		<td class="td">Phy</td>
+		<td class="td">W7</td>
+		<td class="td">87</td>
+		<td class="td">AWN</td>
+		<td class="td">China</td>
+	</tr>
+	<tr class="tr">
+		<td class="td">Maria</td>
+		<td class="td">5</td>
+		<td class="td">UOF</td>
+		<td class="td">Bio</td>
+		<td class="td">41</td>
+		<td class="td">Bio</td>
+		<td class="td">Q7</td>
+		<td class="td">8</td>
+		<td class="td">AIW</td>
+		<td class="td">Korea</td>
+	</tr>
+	<tr class="tr"> 
+		<td class="td">Aiza</td>
+		<td class="td">6</td>
+		<td class="td">UOK</td>
+		<td class="td">Botony</td>
+		<td class="td">76</td>
+		<td class="td">Botony</td>
+		<td class="td">Z7</td>
+		<td class="td">56</td>
+		<td class="td">Gujrat</td>
+		<td class="td">Pakistan</td>
+	</tr>
+	<tr class="tr">
+		<td class="td">Mubashir</td>
+		<td class="td">2</td>
+		<td class="td">UOT</td>
+		<td class="td">IT</td>
+		<td class="td">98</td>
+		<td class="td">IT</td>
+		<td class="td">C7</td>
+		<td class="td">8</td>
+		<td class="td">Washington</td>
+		<td class="td">America</td>
+	</tr>
+	<tr class="tr">
+		<td class="td">Nadia</td>
+		<td class="td">6</td>
+		<td class="td">UOA</td>
+		<td class="td">Stat</td>
+		<td class="td">11</td>
+		<td class="td">Stat</td>
+		<td class="td">B7</td>
+		<td class="td">8</td>
+		<td class="td">ANN</td>
+		<td class="td">Iran</td>
+	</tr>	
+	<tr class="tr">
+		<td class="td">Nida</td>
+		<td class="td">7</td>
+		<td class="td">UOS</td>
+		<td class="td">CS</td>
+		<td class="td">09</td>
+		<td class="td">CS</td>
+		<td class="td">P7</td>
+		<td class="td">8</td>
+		<td class="td">DElhi</td>
+		<td class="td">India</td>
+	</tr>
+	<tr class="tr">
+		<td class="td">Waleed</td>
+		<td class="td">2</td>
+		<td class="td">UOI</td>
+		<td class="td">IT</td>
+		<td class="td">54</td>
+		<td class="td">IT</td>
+		<td class="td">E7</td>
+		<td class="td">2</td>
+		<td class="td">Peshawar</td>
+		<td class="td">Pakistan</td>
+	</tr>	
+	<tr class="tr">
+		<td class="td">Uzma</td>
+		<td class="td">1</td>
+		<td class="td">UOS</td>
+		<td class="td">Stat</td>
+		<td class="td">52</td>
+		<td class="td">Stat</td>
+		<td class="td">I7</td>
+		<td class="td">3</td>
+		<td class="td">AIO</td>
+		<td class="td">Turkey</td>
+	</tr>	
+	<tr class="tr">
+		<td class="td">Salma</td>
+		<td class="td">3</td>
+		<td class="td">UOG</td>
+		<td class="td">Eco</td>
+		<td class="td">62</td>
+		<td class="td">Eco</td>
+		<td class="td">V7</td>
+		<td class="td">8</td>
+		<td class="td">AII</td>
+		<td class="td">Germany</td>
+	</tr>	
+	<tr class="tr">
+		<td class="td">Fatima</td>
+		<td class="td">4</td>
+		<td class="td">UOT</td>
+		<td class="td">Agri</td>
+		<td class="td">21</td>
+		<td class="td">Agri</td>
+		<td class="td">A7</td>
+		<td class="td">45</td>
+		<td class="td">Hong kong</td>
+		<td class="td">Japan</td>
+	</tr>
+	<tr class="tr">
+		<td class="td">Noor</td>
+		<td class="td">8</td>
+		<td class="td">UOK</td>
+		<td class="td">Design</td>
+		<td class="td">64</td>
+		<td class="td">Design</td>
+		<td class="td">T7</td>
+		<td class="td">67</td>
+		<td class="td">Gujranwala</td>
+		<td class="td">Pakistan</td>
+	</tr>
+	<tr class="tr">
+		<td class="td">Muhammad</td>
+		<td class="td">7</td>
+		<td class="td">UOL</td>
+		<td class="td">IT</td>
+		<td class="td">25</td>
+		<td class="td">IT</td>
+		<td class="td">C7</td>
+		<td class="td">100</td>
+		<td class="td">ALA</td>
+		<td class="td">Korea</td>
+	</tr>
+	<tr class="tr">
+		<td class="td">Sadia</td>
+		<td class="td">4</td>
+		<td class="td">UOS</td>
+		<td class="td">CS</td>
+		<td class="td">15</td>
+		<td class="td">CS</td>
+		<td class="td">Y7</td>
+		<td class="td">8</td>
+		<td class="td">MAE</td>
+		<td class="td">Japan</td>
+	</tr>
+	<tr class="tr">
+		<td class="td">Maham</td>
+		<td class="td">65</td>
+		<td class="td">UOT</td>
+		<td class="td">Culture</td>
+		<td class="td">5</td>
+		<td class="td">Culture</td>
+		<td class="td">W7</td>
+		<td class="td">34</td>
+		<td class="td">Gujrat</td>
+		<td class="td">Pakistan</td>
+	</tr>
+	<tr class="tr">
+		<td class="td">Urwa</td>
+		<td class="td">2</td>
+		<td class="td">UOI</td>
+		<td class="td">CS</td>
+		<td class="td">75</td>
+		<td class="td">CS</td>
+		<td class="td">R7</td>
+		<td class="td">61</td>
+		<td class="td">AEG</td>
+		<td class="td">Turkey</td>
+	</tr>
+	<tr class="tr">
+		<td class="td">Amina</td>
+		<td class="td">3</td>
+		<td class="td">UOG</td>
+		<td class="td">Math</td>
+		<td class="td">95</td>
+		<td class="td">Math</td>
+		<td class="td">V7</td>
+		<td class="td">11</td>
+		<td class="td">ABS</td>
+		<td class="td">Iran</td>
+	</tr>
+	<tr class="tr">
+		<td class="td">sadiqa</td>
+		<td class="td">1</td>
+		<td class="td">UOA</td>
+		<td class="td">Phy</td>
+		<td class="td">05</td>
+		<td class="td">Phy</td>
+		<td class="td">U7</td>
+		<td class="td">10</td>
+		<td class="td">ANB</td>
+		<td class="td">Afghanistan</td>
+	</tr>
+	<tr class="tr">
+		<td class="td">Muzamil</td>
+		<td class="td">6</td>
+		<td class="td">UOP</td>
+		<td class="td">Bio</td>
+		<td class="td">51</td>
+		<td class="td">Bio</td>
+		<td class="td">I7</td>
+		<td class="td">87</td>
+		<td class="td">Wazirabaad</td>
+		<td class="td">Pakistan</td>
+	</tr>
+	<tr class="tr">
+		<td class="td">Zarqa</td>
+		<td class="td">1</td>
+		<td class="td">UOY</td>
+		<td class="td">Chemistry</td>
+		<td class="td">59</td>
+		<td class="td">Chemistry</td>
+		<td class="td">T7</td>
+		<td class="td">62</td>
+		<td class="td">Rawalpindi</td>
+		<td class="td">Pakistan</td>
+	</tr>
+	<tr class="tr">
+		<td class="td">Zarmina</td>
+		<td class="td">2</td>
+		<td class="td">UOR</td>
+		<td class="td">Botony</td>
+		<td class="td">56</td>
+		<td class="td">Botony</td>
+		<td class="td">O7</td>
+		<td class="td">40</td>
+		<td class="td">AEQ</td>
+		<td class="td">China</td>
+	</tr>
+	<tr class="tr">
+		<td class="td">Sumbal</td>
+		<td class="td">54</td>
+		<td class="td">UOE</td>
+		<td class="td">IT</td>
+		<td class="td">5</td>
+		<td class="td">IT</td>
+		<td class="td">G7</td>
+		<td class="td">20</td>
+		<td class="td">AEA</td>
+		<td class="td">Turkey</td>
+	</tr>
+	<tr class="tr">
+		<td class="td">Nazish</td>
+		<td class="td">2</td>
+		<td class="td">UOW</td>
+		<td class="td">Stat</td>
+		<td class="td">52</td>
+		<td class="td">Stat</td>
+		<td class="td">J7</td>
+		<td class="td">17</td>
+		<td class="td">AEE</td>
+		<td class="td">Korea</td>
+	</tr>
+	<tr class="tr">
+		<td class="td">Aqib</td>
+		<td class="td">1</td>
+		<td class="td">UOQ</td>
+		<td class="td">Math</td>
+		<td class="td">51</td>
+		<td class="td">Math</td>
+		<td class="td">S7</td>
+		<td class="td">27</td>
+		<td class="td">Mangla</td>
+		<td class="td">Pakistan</td>
+	</tr>
+	<tr class="tr">
+		<td class="td">Talha</td>
+		<td class="td">8</td>
+		<td class="td">UOV</td>
+		<td class="td">Math</td>
+		<td class="td">52</td>
+		<td class="td">Math</td>
+		<td class="td">E7</td>
+		<td class="td">76</td>
+		<td class="td">Aed</td>
+		<td class="td">Turkey</td>
+	</tr>	
+	<tr class="tr">
+		<td class="td">Rafique</td>
+		<td class="td">2</td>
+		<td class="td">UOZ</td>
+		<td class="td">Phy</td>
+		<td class="td">53</td>
+		<td class="td">Phy</td>
+		<td class="td">R7</td>
+		<td class="td">93</td>
+		<td class="td">Abd</td>
+		<td class="td">China</td>
+	</tr>
+	<tr class="tr">
+		<td class="td">Zoya</td>
+		<td class="td">2</td>
+		<td class="td">UON</td>
+		<td class="td">Bio</td>
+		<td class="td">54</td>
+		<td class="td">Bio</td>
+		<td class="td">T7</td>
+		<td class="td">20</td>
+		<td class="td">Islamabad</td>
+		<td class="td">Pakistan</td>
+	</tr>
+	<tr class="tr">
+		<td class="td">Arshad</td>
+		<td class="td">7</td>
+		<td class="td">UOB</td>
+		<td class="td">Phy</td>
+		<td class="td">55</td>
+		<td class="td">Phy</td>
+		<td class="td">U7</td>
+		<td class="td">38</td>
+		<td class="td">ABs</td>
+		<td class="td">China</td>
+	</tr>
+	<tr class="tr">
+		<td class="td">Majeed</td>
+		<td class="td">9</td>
+		<td class="td">UOJ</td>
+		<td class="td">Stat</td>
+		<td class="td">87</td>
+		<td class="td">Stat</td>
+		<td class="td">H7</td>
+		<td class="td">50</td>
+		<td class="td">Murre</td>
+		<td class="td">Pakistan</td>
+	</tr>
+
+	<tr class="tr">
+		<td class="td">Salma</td>
+		<td class="td">4</td>
+		<td class="td">UOH</td>
+		<td class="td">Bio</td>
+		<td class="td">43</td>
+		<td class="td">Bio</td>
+		<td class="td">G7</td>
+		<td class="td">20</td>
+		<td class="td">Taxila</td>
+		<td class="td">Pakistan</td>
+	</tr>
+	<tr class="tr">
+		<td class="td">Furqan</td>
+		<td class="td">3</td>
+		<td class="td">UOC</td>
+		<td class="td">Botony</td>
+		<td class="td">92</td>
+		<td class="td">Botony</td>
+		<td class="td">V7</td>
+		<td class="td">30</td>
+		<td class="td">Multan</td>
+		<td class="td">Pakistan</td>
+	</tr>	
+	<tr class="tr">
+		<td class="td">Abiya</td>
+		<td class="td">8</td>
+		<td class="td">UOT</td>
+		<td class="td">Chemistry</td>
+		<td class="td">71</td>
+		<td class="td">Chemistry</td>
+		<td class="td">P7</td>
+		<td class="td">98</td>
+		<td class="td">Kharian</td>
+		<td class="td">Pakistan</td>
+	</tr>
+	<tr class="tr">
+		<td class="td">Faiq</td>
+		<td class="td">8</td>
+		<td class="td">UOA</td>
+		<td class="td">IT</td>
+		<td class="td">32</td>
+		<td class="td">IT</td>
+		<td class="td">Q7</td>
+		<td class="td">99</td>
+		<td class="td">AAA</td>
+		<td class="td">Turkey</td>
+	</tr>
+	<tr class="tr">
+		<td class="td">Shahid</td>
+		<td class="td">2</td>
+		<td class="td">UOM</td>
+		<td class="td">CS</td>
+		<td class="td">81</td>
+		<td class="td">CS</td>
+		<td class="td">B7</td>
+		<td class="td">8</td>
+		<td class="td">69</td>
+		<td class="td">Korea</td>
+	</tr>
+	<tr class="tr">
+		<td class="td">Shaida</td>
+		<td class="td">8</td>
+		<td class="td">UOW</td>
+		<td class="td">SE</td>
+		<td class="td">54</td>
+		<td class="td">SE</td>
+		<td class="td">M7</td>
+		<td class="td">890</td>
+		<td class="td">Beijing</td>
+		<td class="td">China</td>
+	</tr>
+	<tr class="tr">
+		<td class="td">Zulqarnain</td>
+		<td class="td">6</td>
+		<td class="td">UOC</td>
+		<td class="td">Math</td>
+		<td class="td">88</td>
+		<td class="td">Math</td>
+		<td class="td">N7</td>
+		<td class="td">38</td>
+		<td class="td">Yys</td>
+		<td class="td">Germany</td>
+	</tr>
+	<tr class="tr">
+		
+		<td class="td">Zaigham</td>
+		<td class="td">2</td>
+		<td class="td">UOE</td>
+		<td class="td">Phy</td>
+		<td class="td">14</td>
+		<td class="td">Phy</td>
+		<td class="td">Y7</td>
+		<td class="td">8</td>
+		<td class="td">Abc</td>
+		<td class="td">Iran</td>
+	</tr>
+	<tr class="tr">
+		<tr>
+		<td class="td">Burhan</td>
+		<td class="td">2</td>
+		<td class="td">UOL</td>
+		<td class="td">SE</td>
+		<td class="td">55</td>
+		<td class="td">SE</td>
+		<td class="td">A7</td>
+		<td class="td">8</td>
+		<td class="td">Gujranwala</td>
+		<td class="td">Pakistan</td>
+	</tr>
+	<tr class="tr">
+		<td class="td">Waleed</td>
+		<td class="td">1</td>
+		<td class="td">UOQ</td>
+		<td class="td">Chemistry</td>
+		<td class="td">52</td>
+		<td class="td">Chemistry</td>
+		<td class="td">A2</td>
+		<td class="td">8</td>
+		<td class="td">Sukardu</td>
+		<td class="td">Pakistan</td>
+	</tr>
+	<tr class="tr">
+		<tr>
+		<td class="td">Hashir</td>
+		<td class="td">2</td>
+		<td class="td">UOP</td>
+		<td class="td">IT</td>
+		<td class="td">54</td>
+		<td class="td">IT</td>
+		<td class="td">c4</td>
+		<td class="td">8</td>
+		<td class="td">Peshawar</td>
+		<td class="td">Pakistan</td>
+	</tr>
+	<tr class="tr">
+		<td class="td">Zargham</td>
+		<td class="td">2</td>
+		<td class="td">UOK</td>
+		<td class="td">Bio</td>
+		<td class="td">52</td>
+		<td class="td">Bio</td>
+		<td class="td">c2</td>
+		<td class="td">8</td>
+		<td class="td">Multan</td>
+		<td class="td">Pakistan</td>
+	</tr>
+	<tr class="tr">
+		<td class="td">Faisal</td>
+		<td class="td">4</td>
+		<td class="td">CS</td>
+		<td class="td">4</td>
+		<td class="td">CS</td>
+		<td class="td">6</td>
+		<td class="td">C1</td>
+		<td class="td">8</td>
+		<td class="td">Murre</td>
+		<td class="td">Pakistan</td>
+	</tr>
+</tbody>
+</table>
+
+
+
+</body>
+
+
+
+</html>
